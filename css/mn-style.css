@@ -1,0 +1,589 @@
+/* 
+=============================
+    import-, Google-fonts : 
+=============================
+*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|Frank+Ruhl+Libre:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:500,700,900&display=swap&subset=latin-ext');
+
+
+/*__________________________________________________________________________________________________
+                  .section .section-1
+____________________________________________________________________________________________________*/
+*{
+    box-sizing: border-box; 
+    padding: 0;
+}
+.section{
+    height: 90vh;
+}
+/* 
+=============================
+    .section-1 
+=============================
+*/
+.section-1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    padding-left: 6rem;
+  }
+
+  .item-1{
+  grid-row-start:    1;
+  grid-row-end:      3;
+  grid-column-start:1;
+  grid-column-end:2;
+  background: #C7DDEA;
+  }
+
+  .item-2{
+    background: #F17949;
+    display:flex;
+    justify-content: center;
+  }
+
+  .item-3{
+    grid-row-start:    2;
+    grid-row-end:      3;
+    grid-column-start: 2;
+    grid-column-end:   3;
+    background: #FAB131;
+    }
+
+    .section.section-1>.item-1 >img {
+      
+        max-width: 100%;
+       display: flex;
+        align-self: flex-end;
+        height: auto;
+        width: 20rem;
+        padding:0 5rem 0 0 ;
+    }
+/*
+============================
+        Item-1
+============================
+*/
+  .item-1>.item-content > h1{
+    width: 22rem;
+    left: 3em;
+    top: .7em;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    /*font-size: 1em;*/
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    align-self: flex-start;
+    color: #000000;
+    font-size: 45px;
+  }
+
+  .item-1>.item-content>p{
+    width: 22rem;
+    left: 3em;
+    top: .7em;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    /*font-size: .4em;
+    line-height: 1.8em;*/
+    align-self: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .item-1>.item-content>p span{
+    color:white;
+  }
+
+.item-1>.item-content>button{
+    width: 9em;
+    height: 3.3em;
+    left: 9.3em;
+    top: 24em;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    /*font-size: 15px;
+    line-height: 0.2em;*/
+    cursor:pointer;
+    color: rgba(0, 0, 0, 0.8);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border: none;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.item-1>.item-content>button:hover{
+    box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
+    background-color: rgb(92, 92, 93);
+    color:white;
+}
+
+/*
+============================
+        Item-2
+============================
+*/
+.item-2-content{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.item-2>.item-2-content>p{
+  /* height: 0.2em;*/
+   /*top: 2em;*/
+   font-family: Fira Sans;
+   font-style: normal;
+   font-weight: bold;
+   align-self: center;
+   letter-spacing: -0.02em;
+   color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    line-height: 13px;
+}
+
+
+.item-2 >.item-2-content>h1 a{
+text-decoration: none;
+color: white;
+ /*height: 0em;*/
+ font-family: Frank Ruhl Libre;
+ font-style: normal;
+ font-weight: 900;
+ align-self: center;
+ letter-spacing: -0.02em;
+ color: #FFFFFF;
+ font-size: 32px;
+ line-height: 41px;
+}
+
+/*
+============================
+       Item-3
+============================
+*/
+.item-3-content{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.item-3>.item-3-content>p{
+    /*height: 0.2em;*/
+    /*top: 2em;*/
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    align-self: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+ }
+
+
+.item-3 >.item-3-content>h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    display: flex;
+    align-self: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/*__________________________________________________________________________________________________
+                                         .section .section-2
+____________________________________________________________________________________________________*/
+
+/*============================
+       section-nav .section-2
+============================*/
+.section-2{
+height: 10vh;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 0.1% 2%;
+   
+}
+
+.nav-ul{
+    list-style: none;
+}
+.nav-ul li{
+    display: inline-block;
+    padding: 0 4.5rem;
+    
+}
+
+.nav-ul li a{
+    transition:all 0.3s ease 0s;
+    text-decoration: none;
+    color:black;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.0em;
+    line-height: 100%;
+    opacity: 0.4;
+}
+
+nav .nav-ul li a:hover{
+    color:black;
+    opacity: 1;
+}
+
+/*__________________________________________________________________________________________________
+                                         .section .section-3
+____________________________________________________________________________________________________*/
+/*================================================================
+        .section-3 ,section-3-content1 ,section-3-content2
+==================================================================*/
+.section-3{
+    height: 270vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /*padding: 10px;*/
+    background:  #A9A19E;
+}
+.section-3-content1{
+    grid-row:1/2;
+    grid-column:1/2;
+   /* background:  #A9A19E;*/
+    height: 90vh;
+}
+.section-3-content2{
+    grid-row:1/2;
+    grid-column:2/3;
+        /*background:  #A9A19E;*/
+        height: 100vh;  
+}
+ .sec3-left-item > h1{
+    width: 22rem;
+    left: 3em;
+    top: .7em;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    /*font-size: 1em;*/
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    align-self: flex-start;
+    color: #FFFFFF;
+    font-size: 45px;
+  }
+  .sec3-left-item >button{
+    width: 9em;
+    height: 3.3em;
+    left: 9.3em;
+    top: 24em;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    cursor:pointer;
+    color: rgba(0, 0, 0, 0.8);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border: none;
+    font-size: 10px;
+    line-height: 12px;
+}
+.sec3-left-item >button:hover{
+    box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
+    background-color: rgb(92, 92, 93);
+    color:white;
+}
+.sec3-right-item,
+.sec3-left-item {
+    padding:3rem;
+}
+.sec3-right-item>p{
+    padding: 1.5em;
+    width: 22rem;
+    font-family: Fira Sans;
+    font-style: normal;
+   font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+/*================================================================
+        .section-3 ,sec-3-about .sec-3-cards .sec-3-text
+==================================================================*/
+
+.sec-3-about
+{
+    display: grid;
+    grid-row:2/3;
+    grid-column:1/3;
+    justify-content: space-between;
+    text-align: center;
+    padding:0px;
+    grid-template-columns: 38% 37% 35%;
+}
+ .img{
+    width: 282px;
+    margin: 9px;
+    margin-top: -45px;
+    background: #C7DDEA;
+    border-radius: 5px;
+ }
+
+img{
+    height:150px;
+    /*margin-top: -45px;*/
+}
+
+.card-1,.card-2,
+.card-3 {
+    background-color: #fff;
+    margin-top: -105px;
+    max-width: 300px;
+    padding-right:10px;
+    min-height: 20.5em;
+    align-self: center;
+    border-radius: 5px;
+}
+.sec3-img-h-p>h1{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    padding:20px;
+}
+.sec3-img-h-p>p{
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 18px;
+text-align: center;
+color: rgba(0, 0, 0, 0.4);
+padding:20px;
+}
+
+/*===============
+/.sec-3-about-text
+=================*/
+.sec-3-about-text{
+   /* display: grid;*/
+    grid-row:3/4;
+    grid-column:1/3;
+    text-align: center;
+    height: 125vh;
+    padding: 10px;
+    background: #FAB131
+}
+.sec-3-about{
+    height: 45vh;
+    padding: 10px;
+    background: #FAB131;
+}
+
+.sec-3-about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ .sec-3-about-text h1{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    
+}
+.sec-3-about-text p{
+    max-width: 442px;
+    /*height: 280px;*/
+    left: 500px;
+    top: 1523px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    align-self: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+/*======================================================================
+        section-4
+========================================================================*/
+.section-4{
+    height:151vh;
+   
+}
+.section-4-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+/*-----------------------
+    section-4-item :s
+---------------------*/
+  .section-4-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    min-width: 400px;
+    min-height: 400px;
+    padding: 75px;
+    text-align: center;
+  }
+  .section-4-item a{
+      text-decoration: none;
+      color: rgba(0, 0, 0,0.2);
+  }
+  .section-4-item a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*===============================================
+    numbers in grid: .sec4-p1-item2-num ...
+====================================================*/
+.sec4-p1-item2-num,
+.sec4-p1-item3-num,
+.sec4-p1-item4-num,
+.sec4-p1-item5-num,
+.sec4-p1-item6-num{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 100%;
+    /* or 35px */
+
+    display: flex;
+    align-self: flex-start;
+    /* align-items: center;*/
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(0, 0, 0, 0.4);
+
+}
+.sec4-item-1{
+    background: #C7DDEA;
+}
+ .sec4-item-3 {
+    background: #EBEBEB;
+ }
+.sec4-item-5 {
+    background: #F17949;
+}
+.sec4-item-1 > h1 {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.8);
+}
+.sec4-item-2:nth-child(2),
+.sec4-item-3:nth-child(3),
+.sec4-item-4:nth-child(4),
+.sec4-item-5:nth-child(5),
+.sec4-item-6:nth-child(6){
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*===============================================
+        // .section .section-5
+====================================================*/
+.section-5{
+   background: #A9A19E;
+}
+.sec5-tom{
+    background: #A9A19E;
+    height:15vh;
+    grid-column: 1/4;
+    grid-row: 4/ 4;
+  justify-content: center;
+   text-align: center;
+}
+.section5>div{
+    background: #A9A19E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.sec5-tom>img,
+.sec5-tom>a>img{
+    /*border: 2px solid rgba(0, 0, 0, 0.7);*/
+    max-height: 25px;
+  /*  max-height: 25px;
+    align-items: center;*/
+    justify-self: center;
+    align-self:center;
+    text-align: center;
+   
+}
+.sec5-tom>a>img:hover{
+    font-size: 150%;
+}
+
+.sec5-tom> a{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    justify-self: center;
+    align-self:center;
+   /* align-items: center;
+    text-align: center;*/
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+/*===============================================
+        // .section .section-6
+====================================================*/
+.section-6{
+    background: #777574;
+    height: 60vh;
+    
+}

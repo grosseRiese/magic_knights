@@ -1,0 +1,330 @@
+/* 
+=============================
+    import-, Google-fonts : 
+=============================
+*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|Frank+Ruhl+Libre:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:500,700,900&display=swap&subset=latin-ext');
+
+
+ *{
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    width: 900px;
+    background: #ccc;
+    margin: 0px 150px;
+    line-height: 1;
+    width: 80%;
+}
+
+
+.top-container > h1 {
+font-family: Frank Ruhl Libre;
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 100%;
+
+/* or 45px */
+letter-spacing: -0.02em;
+
+color: #000000;
+}
+header{
+    display: flex;
+    background: #C7DDEA;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn {
+    /* background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center; */
+
+    width: 12em;
+    height: 4em;
+    left: 9.3em;
+    top: 24em;
+    font-family: Fira Sans;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor:pointer;
+    color: rgba(0, 0, 0, 0.8);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border: none;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.main-nav {
+    background: #FFFFFF;
+}
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    height: 5vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 4.5rem;
+    
+}
+
+.main-nav > ul > .active a{
+    color:black;
+    opacity: 1;
+}
+
+.main-nav a{
+    transition:all 0.3s ease 0s;
+    text-decoration: none;
+    color:black;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.0em;
+    line-height: 100%;
+    opacity: 0.4;
+}
+
+.main-nav li a:hover{
+    color:black;
+    opacity: 1;
+}
+
+/* .main-nav a:hover {
+    background: #333;
+    color: #ddd;
+} */
+
+/* .top-header{
+    width: 1002px   ;
+}
+*/
+.top-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.wrapper > .top-container > .top-header > h1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Frank Ruhl Libre;
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 100%;
+
+/* or 45px */
+letter-spacing: -0.02em;
+
+color: #000000;
+}
+
+.wrapper > .top-container > .top-header > .header-img{
+display: flex;
+justify-content: flex-end;
+}
+
+.contact{
+    padding: 80px;
+    background: #A9A19E;
+    display: grid;
+    grid-template-areas: 
+    'box-left box-right-1'
+    'box-left box-right-2';
+    
+}
+
+.box-left {
+    width: 340px;
+    grid-area: box-left;
+}
+
+.box-right-1 {
+    grid-area: box-right-1;
+}
+
+.box-right-2 {
+    grid-area: box-right-2;
+}
+
+.box-right-1 > textarea{
+    width: 340px;
+    height: 40px;
+}
+
+.box-right-2 > textarea{
+    width: 334px;
+    height: 166px;
+}
+
+.contact > .box-left > h2{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+
+    /* or 45px */
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+.contact > .box-right-1 > p{
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 100%;
+
+/* or 14px */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+opacity: 0.7;
+}
+
+.contact > .box-right-2 > p{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    
+    /* or 14px */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    }
+
+textarea {
+    padding: 18px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    
+    /* or 14px */
+    letter-spacing: -0.02em;
+    
+    color: #000000;
+}
+
+.contact > .box-right-2 > .btn{
+position: relative;
+left: -25%;
+top: 16%;
+}
+
+.map {
+    background: url(/img/map-contact.png);
+    min-height: 410px;
+    width: 100%;
+    background-position: center;
+    padding: 3rem;
+}
+
+
+.map > img {
+    
+position: relative;
+left: 46.5%;
+right: 10%;
+top: 39%;
+bottom: 55%;
+}
+
+.map-grid > article {
+    transform: translate(45px, -100px);
+    background: #FAB131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    
+    display:inline-flex;
+    text-align: start;
+    flex-flow: column wrap;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+
+.map > .map-grid > article h2{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+
+    /* identical to box height, or 45px */
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+.map-grid > article p{
+ font-family: Fira Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+
+/* or 171% */
+
+color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+footer {
+    background: #777574;
+    height: 60vh;
+}
